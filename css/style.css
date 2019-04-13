@@ -1,0 +1,344 @@
+:root{
+   --color: #21bea4;
+   --color2: #10a58c;
+}
+
+* {
+   box-sizing: border-box; 
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+  }
+
+.container {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.section-title{
+    padding: 60px 0;
+}
+
+/* górna skecja z nawigacja */
+.header{
+    background: #0002;
+    position: relative;
+    z-index: 1000;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.page-nav-list {
+    height: 100%;
+    display: flex;
+    align-items: center; 
+}
+.page-nav-list-el{
+    list-style: none;
+    width: 150px;
+    padding-left: 10px;
+    height: 100px;
+    font-size: 20px;   
+}
+.page-nav-list-link {
+    text-decoration: none;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.page-nav-list-link:hover{
+    color: #000;
+    background: #fff; 
+}
+
+
+
+/* pierwsza sekcja z image hero  */
+
+.image-hero {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    min-height: 100vh;
+    width: 100%;
+    height: 1000px;
+    background: url(../images/banner-bg.jpg) no-repeat center;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.image-hero-content{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.image-hero-title {
+    font-size: 100px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.image-hero-title-span {
+    color: #000;
+}
+
+.image-hero-text {
+  text-align: center;
+  color: rgb(49, 47, 47);
+  margin: 60px 0;
+}
+
+.image-hero-buttons {
+    display: flex;
+    justify-content: center
+}
+
+.image-hero-btn {
+    width: 200px;
+    height: 50px;
+    margin: 20px 20px 60px 20px;
+}
+
+.image-hero-btn-link {
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-hero-btn-link:hover{
+    color: #fff;
+    background: #000;
+}
+
+.image-hero-arrow {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.image-hero-arrow-img {
+    width: 30px;
+    height: 30px;
+}
+
+/*  sekcja z kursami */
+
+.section-courses{
+    background: #f8da60;
+    padding-bottom: 40px;
+}
+
+.section-title-text {
+    padding: 20px 0;
+    margin: 0px;
+    font-size: 12px;
+}
+
+.section-title-main{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+}
+.section-title-main-span {
+    color: #fff;
+}
+
+.section-title-main::after{
+    content: '';
+    display: block;
+    width: 150px;
+    height: 3px;
+    margin-top: 10px;
+    background: #000;
+}
+
+.section-title-main::after{
+    content: '';
+    display: block;
+    width: 150px;
+    height: 3px;
+    margin-top: 10px;
+    background: #000;
+}
+
+/* sekcja z kursami  */
+
+.section-courses-block {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.section-courses-block-img {
+    width: 100%;
+}
+
+.single-block {
+    margin-right: 30px;
+    margin-bottom: 60px;
+}
+
+.single-block:last-of-type{
+    margin-right: 0;
+}
+
+.block-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #3a300d;
+}
+
+.block-text{
+    /* text-align: justify; */
+    color: #bda53b;
+    margin-bottom: 30px;
+}
+
+.btn{
+    display: block;
+    width: 170px;
+    height: 50px;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background: #f8da60;
+    border: 3px solid #000;
+    color: #000;
+}
+
+/* sekcja z zaletami */
+
+.section-benefits {
+    background: #ecce5e;
+    padding-bottom: 40px;
+}
+
+.section-benefits-block-img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.section-benefits .block-text,
+.section-benefits .block-title{
+    text-align: center;
+}
+
+.section-benefits .btn {
+    margin: 0 auto;
+}
+
+/* sekcja z artykułami About Us */
+
+.section-aboutUs{
+    background: #f8da60;
+   padding-bottom: 80px;
+}
+
+.section-about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0; 
+}
+.section-about-left{
+    width: 50%;
+    text-align: justify;
+    color: #bda53b;
+}
+
+.section-about-right {
+    width: 50%;
+    padding-left: 40px;
+    font-size: 35px;
+    line-height: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* footer */
+
+.footer{
+    background: #000;
+    padding: 40px 0;
+}
+
+.footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-menu-block {
+    display: flex;
+}
+
+.footer-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-menu:last-of-type{
+    margin-left: 100px;
+}
+
+.footer-menu-element{
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer-menu-link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-copyright-text{
+    color: #434343;
+    padding: 0;
+    margin: 0;
+}
