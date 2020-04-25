@@ -8,7 +8,7 @@
 }
 body {
     font-family: 'Raleway', sans-serif;
-    /* position: relative; */
+
 }
 
 .visuallyhidden {
@@ -355,13 +355,9 @@ body {
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (max-width: 600px) {
-
-} */
 
 /* Medium devices (landscape tablets, 768px and up)  */
- @media only screen and (min-width: 600px) and (max-width: 768px) {
+ /* @media only screen and (min-width: 600px) and (max-width: 768px) {
     .section-courses, .section-benefits, .section-aboutUs {
         padding: 0 60px;
     }
@@ -371,13 +367,13 @@ body {
         justify-content: center;
     }
 
-}  
+}   */
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
+@media (max-width: 1000px) {
    .image-hero-content {
         margin-left: 60px;
         margin-right: 60px;
+        width: 400px;
     }
     .image-hero-title {
         font-size: 60px;
@@ -403,6 +399,9 @@ body {
     }
     .footer {
         padding: 20px 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .footer-copyright-text {
         text-align: end;
@@ -415,11 +414,32 @@ body {
         align-items: center;
         justify-content: center;
     }
+    .page-nav {
+        display: none;
+    }
+    .container{
+        max-width: 700px;
+    }
+    /* .footer-menu-block {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-menu:last-of-type{
+        margin-left: 0;
+    } */
+    body {
+        min-width: 640px;
+    }
      
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
    .container {
        padding: 0 40px;
    }
